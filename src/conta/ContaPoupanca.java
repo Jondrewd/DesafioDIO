@@ -1,3 +1,6 @@
+package conta;
+import entity.Cliente;
+
 public class ContaPoupanca extends Conta{
     
     public ContaPoupanca(Cliente cliente){

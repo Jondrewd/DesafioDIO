@@ -1,6 +1,8 @@
+package entity;
 public class Cliente {
     public String nomeCliente;
 
+    public Cliente(){}
     public String getNome(){
         return nomeCliente;
     }

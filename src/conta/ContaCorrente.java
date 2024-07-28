@@ -1,3 +1,6 @@
+package conta;
+import entity.Cliente;
+
 public class ContaCorrente extends Conta {
 
     public ContaCorrente(Cliente cliente){

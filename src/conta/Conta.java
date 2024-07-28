@@ -1,5 +1,8 @@
-public class Conta implements IntefaceConta{
+package conta;
 
+import entity.Cliente;
+
+public class Conta implements IntefaceConta{
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
 
@@ -28,8 +31,12 @@ public class Conta implements IntefaceConta{
 
     @Override
     public void tranferencia(double valor, IntefaceConta conta) {
+        if (valor < saldo){
+            System.out.println("O valor é menor do que o seu saldo.");
+        }else{
         this.saque(valor);
         conta.depositar(valor);
+        }
     }
 
     @Override
